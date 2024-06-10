@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        nav {
+            background-color:yellowgreen;
+            color:blue;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h2{
+            color: red;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url(snow.jpg);
+            background-position: 10%;
+            background-size: 100%;
+            background: cover;
+        }
+        .contact-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color:antiquewhite;
+            padding: 10px;
+            border-radius: 2px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-container textarea {
+            height: 150px;
+        }
+        .contact-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        nav :hover{
+            color:blue;
+            text-align: center;
+            background-color: orange;
+        }
+        @media screen and (min-width:320px )  {
+
+body {
+     background-color:red;
+}
+}
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: greenyellow;
+}
+} 
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: yellow;
+}
+}
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(101, 51, 208);
+}
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Reg.html">Register</a></li>
+            <li><a href="Login.html">LoginPage</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="ContactUs.html">Contactus</a></li>
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="POST">
+            Full Name:<input type="text" name="Full Name" placeholder="Full Name" required autofocus><br>
+            enter mobile no:<input type="tel"  name="personal" id="per1" pattern="[0-9]{10}" title=""the ten digits number placeholder="Mobile Number" required><br>
+            E-mail:
+      <input list="email" name="mymails" required>
+<datalist id="email">
+<option value="pavannagasai@gmail.com"></option>
+            <option value="pavannagasai@yahoo.com"></option>
+            <option value="pavannagasai@hotmail.com"></option>
+             <option value="pavannagasai@gmail.com"></option>
+        </datalist><br>
+            Message:<input type="textarea" placeholder="Message" required><br>
+            <h2 style="color:gold">Address::</h2>
+            <p>palnadu distic,krosuru , vutukuru</p>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>

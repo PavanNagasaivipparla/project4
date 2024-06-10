@@ -1,0 +1,131 @@
+<html>
+  <head>
+     <title> Register Page </title>
+     <style>
+      body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(tree.jpg);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      body{
+         
+         background-color:greenyellow;
+         color: red;
+         text-align: center;
+         font-size:x-small;
+         font-style: italic;
+         
+      }
+      nav {
+            background-color:yellowgreen;
+            color:blue;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        nav{
+          text-align: center;
+        }
+        nav :hover{
+            color:red;
+            text-align: center;
+            font-size: medium;
+            background-color: yellow;
+        }
+        @media screen and (min-width:320px )  {
+
+body {
+     background-color:red;
+}
+}
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: greenyellow;
+}
+} 
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: yellow;
+}
+}
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(101, 51, 208);
+}
+}
+     </style>
+
+  </head>
+ <body>
+   <nav>
+      <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="Reg.html">Register</a></li>
+          <li><a href="Login.html">LoginPage</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="ContactUs.html">Contactus</a></li>
+      </ul>
+  </nav>
+   <div class="bg">
+ <h1 style="color:yellow">Register Form<h1>
+    <form action="ContactUs.html">
+      First Name:<input type:"text" name:"First Name" value:"uname" placeholder="enter your first name" required autofocus><br>
+      Last Name:<input type:"text" name:"Last Name" value:"lname" placeholder="enter your last name" required><br>
+      E-mail:
+      <input list="email" name="mymails" required>
+<datalist id="email">
+<option value="pavannagasai@gmail.com"></option>
+            <option value="pavannagsai@yahoo.com"></option>
+            <option value="pavannagasai@hotmail.com"></option>
+             <option value="pavannagasai@gmail.com"></option>
+        </datalist><br>
+	    Gender::<input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value=female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+   select website::<select name:" select website">
+              <option>Google</option>
+              <option>Amazon</option>
+              <option>Flipkart</option>
+              <option>Youtobe</option>
+              <option>Calculater</option>
+              <option>Google Drive</option>
+               <option>Camera</option>
+               <option>Chatgpt</option>
+    </select><br><br>
+    Date::<input type="date"><br>
+     <input type="submit" value="submit">
+     <input type="Reset" value="Reset">
+     <button>Next</button>
+</form>
+</body>
+</div>
+</html>
